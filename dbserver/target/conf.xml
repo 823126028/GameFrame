@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<servlet>
+<port>9097</port>
+<sessionOutTime>50</sessionOutTime>
+<sessionTickTime>5</sessionTickTime>
+<parsers>
+<http-post-parser>com.quanmin.netty.parser.OneLevelJsonParser</http-post-parser>
+<http-get-parser>com.quanmin.netty.parser.OneLevelJsonParser</http-get-parser>
+<!-- <tcp-parser></tcp-parser> -->
+</parsers>
+<listeners>
+<listener-class>com.quanmin.system.listener.SpringContextLoaderListener</listener-class>
+<listener-class>com.quanmin.system.listener.InitServerListener</listener-class>
+</listeners>
+</servlet>

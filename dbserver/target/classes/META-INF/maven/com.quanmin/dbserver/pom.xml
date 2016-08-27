@@ -1,0 +1,300 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.quanmin</groupId>
+  <artifactId>dbserver</artifactId>
+  <packaging>jar</packaging>
+  <name>dbserver</name>
+  <version>0.0.1</version>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <dependencies>    
+  		<dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-context</artifactId>  
+            <version>3.1.4.RELEASE</version>  
+            <type>jar</type>  
+        </dependency>  
+        
+        <dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-tx</artifactId>
+    		<version>3.1.4.RELEASE</version>
+		</dependency>
+  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-core</artifactId>  
+            <version>3.1.4.RELEASE</version>  
+            <type>jar</type>  
+        </dependency>  
+        
+        <!-- https://mvnrepository.com/artifact/org.apache.hadoop/zookeeper -->
+  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-beans</artifactId>  
+            <version>3.1.4.RELEASE</version>  
+            <type>jar</type>  
+        </dependency>  
+  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-orm</artifactId>  
+            <version>3.1.4.RELEASE</version>  
+            <type>jar</type>  
+        </dependency>  
+        
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-context-support</artifactId>  
+            <version>3.1.4.RELEASE</version>  
+            <type>jar</type>  
+        </dependency> 
+        
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-expression</artifactId>  
+            <version>3.1.4.RELEASE</version>  
+            <type>jar</type>  
+        </dependency> 
+        
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>3.1.4.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-asm</artifactId>
+		    <version>3.1.4.RELEASE</version>
+		</dependency>
+
+        <dependency>  
+            <groupId>mysql</groupId>  
+            <artifactId>mysql-connector-java</artifactId>  
+            <version>5.1.34</version>  
+        </dependency>  
+ 
+        <dependency>  
+            <groupId>log4j</groupId>  
+            <artifactId>log4j</artifactId>  
+            <version>1.2.17</version>  
+        </dependency>  
+        
+        <dependency>  
+            <groupId>commons-io</groupId>  
+            <artifactId>commons-io</artifactId>  
+            <version>1.4</version>  
+        </dependency>  
+        
+        <dependency>  
+    		<groupId>aopalliance</groupId>  
+    		<artifactId>aopalliance</artifactId>  
+    		<version>1.0</version>  
+		</dependency>  
+		
+		<dependency>  
+    		<groupId>asm</groupId>  
+    		<artifactId>asm</artifactId>  
+    		<version>3.3.1</version>  
+		</dependency>  
+		
+		<dependency>  
+    		<groupId>asm</groupId>  
+    		<artifactId>asm-commons</artifactId>  
+    		<version>3.3.1</version>  
+		</dependency>  
+		
+		<dependency>  
+    		<groupId>cglib</groupId>  
+    		<artifactId>cglib</artifactId>  
+    		<version>2.2.2</version>  
+		</dependency>  
+		
+		<dependency>  
+    		<groupId>commons-collections</groupId>  
+    		<artifactId>commons-collections</artifactId>  
+    		<version>3.1</version>  
+		</dependency>  
+		
+		<dependency>  
+    		<groupId>commons-io</groupId>  
+    		<artifactId>commons-io</artifactId>  
+    		<version>1.4</version>  
+		</dependency> 
+		
+		<dependency>  
+    		<groupId>commons-lang</groupId>  
+    		<artifactId>commons-lang</artifactId>  
+    		<version>2.4</version>  
+		</dependency> 
+		
+		<dependency>  
+    		<groupId>commons-logging</groupId>  
+    		<artifactId>commons-logging</artifactId>  
+    		<version>1.1.1</version>  
+		</dependency> 
+		
+		<dependency>
+   		 	<groupId>com.alibaba</groupId>
+   		 	<artifactId>druid</artifactId>
+    		<version>1.0.13</version>
+		</dependency>
+		
+		<dependency>
+   			 <groupId>net.sf.ehcache</groupId>
+    		<artifactId>ehcache-core</artifactId>
+    		<version>2.4.4</version>
+      </dependency>
+      
+  	 <dependency>
+   		 <groupId>com.alibaba</groupId>
+    	<artifactId>fastjson</artifactId>
+    	<version>1.1.26</version>
+	</dependency>
+	
+   <dependency>  
+  	 	<groupId>org.mybatis</groupId>  
+   		<artifactId>mybatis</artifactId>  
+  		<version>3.1.1</version>  
+ 	</dependency> 
+ 
+	<dependency>
+	    <groupId>org.mybatis.caches</groupId>
+	    <artifactId>mybatis-ehcache</artifactId>
+	    <version>1.0.3</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-all -->
+	<dependency>
+	    <groupId>org.apache.activemq</groupId>
+	    <artifactId>activemq-all</artifactId>
+	    <version>5.9.0</version>
+	</dependency>
+	
+	
+	<dependency>
+	    <groupId>org.mybatis</groupId>
+	    <artifactId>mybatis-spring</artifactId>
+	    <version>1.1.1</version>
+	</dependency>
+
+	<dependency>
+    	<groupId>io.netty</groupId>
+    	<artifactId>netty</artifactId>
+    	<version>3.10.6.Final</version>
+	</dependency> 
+	
+	<dependency>  
+    <groupId>com.alibaba.otter</groupId>  
+    <artifactId>canal.client</artifactId>  
+    <version>1.0.12</version>  
+</dependency>  
+	
+	<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.4.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.4.2</version>
+</dependency>
+
+ </dependencies>  
+  
+  <build>
+		<finalName>dbserver</finalName>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<targetPath>${project.build.directory}/../../JarPublish</targetPath>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.6</version>
+					<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>com.quanmin.ServletBootstrap</mainClass>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>  
+                        	<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>  
+						</manifest>
+					<manifestEntries>
+                        <Class-Path>config/</Class-Path>
+                    </manifestEntries>
+					</archive>
+					<outputDirectory>
+						${project.build.directory}/../../JarPublish
+					</outputDirectory>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>
+								${project.build.directory}/../../JarPublish/lib
+							</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<attach>true</attach>
+					<encoding>UTF-8</encoding>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>compile</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
